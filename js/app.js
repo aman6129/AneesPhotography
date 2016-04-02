@@ -1,79 +1,22 @@
-// var pswpElement = document.querySelectorAll('.pswp')[0];
+$(document).ready(function() {
 
-// // // build items array
-// var items = [
-//     {
-//         src: 'assets/DSC00031.JPG',
-//         w: 965.3,
-//         h: 645.3
-//     },
-//     {
-//         src: 'assets/DSC00047.JPG',
-//         w: 965.3,
-//         h: 645.3
-//     },
-//     {
-//         src: 'assets/DSC00052.JPG',
-//         w: 965.3,
-//         h: 645.3
-//     },
-//     {
-//         src: 'assets/DSC00054.JPG',
-//         w: 965.3,
-//         h: 645.3
-//     },
-//     {
-//         src: 'assets/DSC00057.JPG',
-//         w: 965.3,
-//         h: 645.3
-//     },
-//     {
-//         src: 'assets/DSC00103.JPG',
-//         w: 965.3,
-//         h: 645.3
-//     },
-//     {
-//         src: 'assets/DSC00211.JPG',
-//         w: 965.3,
-//         h: 645.3
-//     },
-//     {
-//         src: 'assets/DSC00214.JPG',
-//         w: 965.3,
-//         h: 645.3
-//     },
-//     {
-//         src: 'assets/DSC00276.JPG',
-//         w: 965.3,
-//         h: 645.3
-//     },
-//     {
-//         src: 'assets/DSC00378.JPG',
-//         w: 965.3,
-//         h: 645.3
-//     }
-// ];
+    var files = [
+        "DSC00047", "DSC00052", "DSC00054","DSC00103","DSC00211",
+        "DSC00276","DSC00378","DSC00528","DSC00799", "DSC00927","DSC00942","DSC00945","DSC00951","DSC01021","DSC01039","DSC01048","DSC01075",
+        "DSC01153","DSC01159", "DSC01281", "DSC01404", "DSC01455", "DSC01466", "DSC01478", "DSC01993", "DSC02000", "DSC02094", "DSC02161",
+        "DSC02296", "DSC02393", "DSC02540", "DSC02601", "DSC02862", "DSC03098", "DSC03595", "DSC03602", "DSC03655", "DSC03668", "DSC03745",
+        "DSC04448", "DSC04674", "DSC04850", "DSC05050", "DSC05441"
+        ]
 
-// // // define options (if needed)
-
-function expand(index){
-    console.log("index to be displayed: " + index);
-
-    // var options = {
-    //     history: false,
-    //     focus: false,
-    //     index: index
-    // };
-
-    // // Initializes and opens PhotoSwipe
-    // var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-    // gallery.init();
-    // console.log(gallery.options.index)
-
-}
-
-    $(document).ready(function() {
-        $("#lightgallery").lightGallery({
-             thumbnail:true
-        }); 
-    });
+    for(var i = 0; i < files.length; ++i){
+        console.log('Appending file ' + files[i]);
+        var href = "assets/" + files[i] + ".JPG" //img files
+        var src = "assets/tn/" + files[i] + "_tn.JPG" //tn files
+        $(".content").append(
+                "<a class='thumbnail-wrapper' href=" + href + "><img src=" + src + " class='thumbnail'></a>"
+            )
+    }
+    $("#lightgallery").lightGallery({
+         thumbnail: true
+    }); 
+});
