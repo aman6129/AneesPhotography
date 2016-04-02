@@ -16,7 +16,7 @@ $(document).ready(function() {
                 "<a class='thumbnail-wrapper' href=" + href + "><img src=" + src + " class='thumbnail'></a>"
             )
     }
-    $("#lightgallery").lightGallery({
-         thumbnail: true
-    }); 
+    // $("#lightgallery").lightGallery({
+    //      thumbnail: true
+    // }); 
 });
