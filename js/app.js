@@ -9,7 +9,7 @@ $(document).ready(function() {
         ]
 
     for(var i = 0; i < files.length; ++i){
-        console.log('Appending file ' + files[i]);
+        // console.log('Appending file ' + files[i]);
         var href = "assets/" + files[i] + ".JPG" //img files
         var src = "assets/tn/" + files[i] + "_tn.JPG" //tn files
         $(".content").append(
