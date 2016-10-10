@@ -1,14 +1,166 @@
-/* Master Styles */
-h1 {
-  color: #369;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
+body{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'light', helvetica, sans-serif;
 }
-h2, h3 {
-  color: #444;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
+
+@font-face{
+    font-family: 'light';
+    src: url('font/light.otf');
 }
-body {
-  margin: 2em;
+
+@font-face{
+    font-family: 'bold';
+    src: url('font/bold.otf');
+}
+
+b{
+    font-family: 'bold', helvetica, sans-serif;
+}
+
+br{
+    display: block;
+    margin-top: -20px;
+    content: " ";
+}
+
+.login-container{
+    /*font-family: 'light', helvetica, sans-serif;*/
+    display: block;
+    text-align: center;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: #84909E;
+}
+
+.login-group{
+    display: block;
+    width: 400px;
+    height: 35px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-container{
+    font-size: 70px;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.login-input{
+    width: 240px;
+    height: 38px;
+
+    font-family: 'light', helvetica, sans-serif;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #84909E;
+    text-align: center;
+    font-size: 18px;
+
+    color: #84909E;
+}
+
+.login-button{
+    /*background-image: url('assets/login-button.png');*/
+    margin-top: -4px;
+    padding-left: 7px;
+    display: inline-block;
+    line-height: 35px;
+    vertical-align: middle;
+
+    /*transition: padding-left 0.5s ease;*/
+
+}
+
+.logo{
+    margin-top: 35px;
+}
+
+.toolbar{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #84909E;
+}
+
+.toolbar-icon{
+    padding-left: 15px;
+    color: #84909e;
+    line-height: 50px;
+    font-size: 25px;
+
+}
+
+.button-group{
+    float: right;
+    line-height: 50px;
+
+}
+
+.search-bar{
+    margin-top: 11px;
+    width: 250px;
+    height: 30px;
+    border-radius: 35px;
+    border-color: #84909e;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #84909E;
+
+    text-align: center;
+    font-size: 16px;
+    font-family: 'light', helvetica, sans-serif;
+    color: white;
+}
+
+.search-s{
+    transition: width 0.5s ease;
+}
+
+.search-s:hover{
+    width: 100px;
+}
+
+.toolbar-button{
+    margin-top: 10px;
+    margin-right: 20px;
+    line-height: 30px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    /*background-color: #84909E;*/
+    border-radius: 20px;
+
+    background-size: 30px 30px;
+}
+
+.search-bar::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+  font-family: 'light', helvetica, sans-serif;
+}
+.search-bar::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+  font-family: 'light', helvetica, sans-serif;
+
+}
+.search-bar:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+  font-family: 'light', helvetica, sans-serif;
+
+}
+.search-bar:-moz-placeholder { /* Firefox 18- */
+  color: white;
+  font-family: 'light', helvetica, sans-serif;
+
 }
