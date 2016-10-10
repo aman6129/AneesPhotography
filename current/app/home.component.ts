@@ -14,6 +14,17 @@ import { Component } from '@angular/core';
             <a class="toolbar-button" style="background-image: url('assets/gearicon.png');"></a>
         </span>
     </div>
+    <div class="content-container">
+        <img src="assets/kiwi.jpg" class="image-single"/>
+        <img src="assets/kiwi.jpg" class="image-single"/>
+
+        <img src="assets/kiwi.jpg" class="image-thumb"/>
+        <img src="assets/kiwi.jpg" class="image-thumb"/>
+        <img src="assets/kiwi.jpg" class="image-thumb"/>
+
+
+
+    </div>
   `
 })
 

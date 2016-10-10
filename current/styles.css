@@ -3,6 +3,8 @@ body{
     padding: 0px;
 
     font-family: 'light', helvetica, sans-serif;
+
+
 }
 
 @font-face{
@@ -85,18 +87,17 @@ br{
 .toolbar{
     width: 100%;
     height: 50px;
-    background-color: white;
+    background-color: #ff6850;
     position: fixed;
     top: 0px;
     left: 0px;
-    border-bottom: solid;
-    border-width: 1px;
-    border-color: #84909E;
+
+    box-shadow: 1px 0px 10px gray;
 }
 
 .toolbar-icon{
     padding-left: 15px;
-    color: #84909e;
+    color: white;
     line-height: 50px;
     font-size: 25px;
 
@@ -124,13 +125,6 @@ br{
     color: white;
 }
 
-.search-s{
-    transition: width 0.5s ease;
-}
-
-.search-s:hover{
-    width: 100px;
-}
 
 .toolbar-button{
     margin-top: 10px;
@@ -143,6 +137,60 @@ br{
     border-radius: 20px;
 
     background-size: 30px 30px;
+}
+
+
+.content-container{
+    display: block;
+    width: 800px;
+    height: 100%;
+    padding-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*background-color: red;*/
+}
+
+.image-single{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+.image-thumb{
+    display: inline-block;
+    width: 243px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .content-container {
+        width: 80%;
+        padding-top: 40px;
+    }
+
+    .image-thumb{
+        width: 40%;
+
+    }
+
+    .toolbar{
+        height: 40px;
+    }
+
+    .toolbar-icon{
+        line-height: 40px;
+        font-size: 18px;
+    }
+
+    .toolbar-button{
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
+    }
+
 }
 
 .search-bar::-webkit-input-placeholder { /* Chrome/Opera/Safari */
