@@ -10,6 +10,15 @@ body{
     margin: 0px;
 }
 
+input, button{
+    border:none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
 .header-font{
     font-family: "Montserrat" , sans-serif;
 }
@@ -25,4 +34,36 @@ body{
 
 p{
     font-family: "Cardo", serif;
+}
+
+input.input-field{
+    height: 35px;
+    padding: 0px 10px;
+    font-family: "Cardo", serif;
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+
+    text-align: center;
+}
+
+button.btn{
+    height: 41px;
+    line-height: 33px;
+    padding: 0px 15px;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    font-family: "Cardo", serif;
+    font-size: 18px;
+}
+
+button.btn.primary{
+    background-color: white;
+    color: black;
 }
