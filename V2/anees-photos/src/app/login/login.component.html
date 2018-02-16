@@ -15,7 +15,7 @@
         </span>
         <span class="card right">
             <div class="arrow-container">
-                <div class="arrow-button left">
+                <div class="arrow-button left"  (click)="changeImage(carouselIndex - 1)">
 
                 </div>
             </div>
@@ -23,7 +23,7 @@
                 <img src="{{carouselImagePath}}" class="carousel-img"/>
             </div>
             <div class="arrow-container right">
-                <div class="arrow-button right">
+                <div class="arrow-button right" (click)="changeImage(carouselIndex + 1)">
                     
                 </div>
             </div>
