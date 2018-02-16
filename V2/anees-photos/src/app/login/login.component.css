@@ -63,6 +63,37 @@
     left: 390px;
 }
 
+.arrow-button{
+    margin-top: 200px;
+    margin-left: 5px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    
+    background-color: transparent;
+    transition: all 0.5s ease;
+}
+
+.arrow-button.left{
+    background-image: url("/assets/controls/left-arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.arrow-button.right{
+    background-image: url("/assets/controls/right-arrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.arrow-button:hover{
+    cursor: pointer;
+    background-color: #e4e4e4;
+}
+
 .carousel-container{
     width: 330px;
     height: 100%;
