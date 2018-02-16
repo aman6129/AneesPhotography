@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  private carouselImagePath: string;
+
+  constructor() {
+    this.carouselImagePath = '/assets/images/kiwi1.JPG';
+  }
 
   ngOnInit() {
   }

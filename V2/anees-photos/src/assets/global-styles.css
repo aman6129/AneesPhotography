@@ -49,6 +49,8 @@ input.input-field{
     border-color: white;
 
     text-align: center;
+    letter-spacing: 3px;
+    
 }
 
 button.btn{
@@ -61,6 +63,8 @@ button.btn{
     border-color: white;
     font-family: "Cardo", serif;
     font-size: 18px;
+    letter-spacing: 3px;
+    
 }
 
 button.btn.primary{

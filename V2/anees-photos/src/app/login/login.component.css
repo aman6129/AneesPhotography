@@ -22,15 +22,15 @@
     display: inline-block;
     width: 50%;
     height: 100%;
+    position: absolute;
+    
 }
 .card.left{
     background-color: black;
-    position: absolute;
 }
 
 .card.right{
     background-color: white;
-    position: absolute;
     left: 50%;    
 }
 
@@ -50,4 +50,32 @@
 
 .password-field-container{
     padding: 20px 0px;
+}
+
+.arrow-container{
+    display: inline-block;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+}
+
+.arrow-container.right{
+    left: 390px;
+}
+
+.carousel-container{
+    width: 330px;
+    height: 100%;
+    position: absolute;
+    left: 60px;
+
+    overflow: hidden;
+    text-align: center;
+}
+
+.carousel-img{
+    margin-top: 60px;
+    height: 330px;
+    position: absolute;
+    left: -80px;
 }
