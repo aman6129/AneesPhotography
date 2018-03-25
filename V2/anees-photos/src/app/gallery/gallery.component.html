@@ -1,0 +1,12 @@
+<div class="gallery-header">
+  <a class="back-btn" routerLink="/home">
+    <<<
+  </a> | 
+  <span class="gallery-name">{{galleryName}} - {{gallerySize}}</span>
+</div>
+<div class="gallery-container">
+    <div class="image-container" [ngClass]="{'expanded': image.expanded}" *ngFor="let image of imageKeys" (click)="toggleExpand(image)">
+      <img class="gallery-image" src="{{baseUrl}}{{image.Key}}">
+    </div>
+
+</div>

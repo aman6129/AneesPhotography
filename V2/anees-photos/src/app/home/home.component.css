@@ -1,0 +1,117 @@
+.navbar{
+    display: block;
+    position: fixed;
+    background-color: #ffe200;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    padding: 0px 30px;
+
+    font-size: 0px;
+}
+
+.navbar > div.logo{
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    /* padding: 0px 10px; */
+    text-align: center;
+    text-transform: uppercase;
+
+    height: 100px;
+    width: 300px;
+    
+}
+
+.navbar-controls-container{
+    display: inline-block;
+    width: 600px;
+    height: 100px;
+    line-height: 100px;
+    vertical-align: top;
+}
+
+.navbar-link{
+    font-size: 18px;
+    padding: 0px 10px;
+    font-family: "Cardo", serif;
+}
+
+.navbar-link:hover{
+    cursor: pointer;
+}
+
+.navbar-link.active{
+    border-bottom: solid black 2px;
+}
+
+.navbar-link.contact{
+    color: darkred;
+}
+
+.body-container{
+    display: inline-block;
+    margin-top: 100px;
+    padding: 0px 50px;
+    min-width: 900px;
+}
+
+.folder-container{
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin: 0px 0px;
+    vertical-align: top;
+    
+    background-color: white;
+
+    cursor: pointer;
+    transition: 0.5s ease all;
+}
+
+.folder-container:nth-child(odd){
+    background-color: black;
+}
+
+.folder-container:hover{
+    margin-top: -7px;
+    z-index: 999;
+
+    -webkit-box-shadow: 0px 12px 40px -8px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0px 12px 40px -8px rgba(0,0,0,0.23);
+    box-shadow: 0px 12px 40px -8px rgba(0,0,0,0.23);
+}
+
+.folder-header{
+    display: block;
+    text-align: center;
+    color: black;
+    font-family: "Cardo", serif;
+    font-size: 16px;
+
+    line-height: 50px;
+    height: 50px;
+}
+
+.folder-container:nth-child(odd) > div.folder-header{
+    color: white;
+}
+
+.folder-image-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 300px;
+    width: 325px;
+    
+    background-color: lightgray;
+    overflow: hidden;
+}
+
+.folder-img{
+    height: 300px;
+    margin-left: -20%;
+    display: block;
+}

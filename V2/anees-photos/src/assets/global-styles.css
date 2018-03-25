@@ -10,6 +10,7 @@ body{
     margin: 0px;
 }
 
+
 input, button{
     border:none;
     background-image:none;
@@ -78,5 +79,5 @@ button.btn.primary{
 }
 
 button.btn.primary:hover{
-
+    
 }

@@ -8,24 +8,21 @@
                     graphy
                 </div>
                 <div class="password-field-container">
-                    <input class="input-field" type="password" placeholder="password" style="width: 62%;"/>
-                    <button class="btn primary" style="width: 30%;">enter</button>
+                    <input class="input-field" [(ngModel)]="password" type="password"
+                    id="password-field" placeholder="password" style="width: 62%;"/>
+                    <button class="btn primary" style="width: 30%;" (click)="verifyPassword()">enter</button>
                 </div>
             </div>
         </span>
         <span class="card right">
             <div class="arrow-container">
-                <div class="arrow-button left"  (click)="changeImage(carouselIndex - 1)">
-
-                </div>
+                <div class="arrow-button left"  (click)="changeImage(carouselIndex - 1)"></div>
             </div>
             <div class="carousel-container">
-                <img src="{{carouselImagePath}}" class="carousel-img"/>
+                <img src="{{carouselImagePath}}" class="carousel-img" id="carousel-img"/>
             </div>
             <div class="arrow-container right">
-                <div class="arrow-button right" (click)="changeImage(carouselIndex + 1)">
-                    
-                </div>
+                <div class="arrow-button right" (click)="changeImage(carouselIndex + 1)"></div>
             </div>
         </span>
     </div>
