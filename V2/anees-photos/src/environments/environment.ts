@@ -5,4 +5,9 @@
 
 export const environment = {
   production: false,
-;
+  storageServiceInfo: {
+    account: 'accountNameHere',
+    accessKeyId: 'ACcessKeyHEre',
+    secretKey: 'SecretKEyHere',
+    s3BaseUrl: 'baseUrlHere'
+};
