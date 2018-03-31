@@ -6,9 +6,9 @@
 export const environment = {
   production: false,
   storageServiceInfo: {
-    account: 'aneesphotostore',
-    accessKeyId: 'AKIAJGLL3FDW7HVECWAQ',
-    secretKey: '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',
-    s3BaseUrl: 'https://s3-us-west-2.amazonaws.com/aneesphotostore/'
+    account: 'a',
+    accessKeyId: 'a',
+    secretKey: 'a',
+    s3BaseUrl: 'a'
   }
 };
