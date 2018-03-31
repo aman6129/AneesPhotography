@@ -1,3 +1,11 @@
+html{
+    background-color: #dead59;
+}
+
+body{
+    background-color: #dead59;
+    height: 66vw;
+}
 .navbar{
     display: block;
     position: fixed;
@@ -6,7 +14,7 @@
     height: 100px;
     line-height: 100px;
     padding: 0px 30px;
-
+        border-radius: 0px;
     font-size: 0px;
 }
 
@@ -18,7 +26,7 @@
     /* padding: 0px 10px; */
     text-align: center;
     text-transform: uppercase;
-
+    color: #dead59;
     height: 100px;
     width: 300px;
     
@@ -36,6 +44,7 @@
     font-size: 18px;
     padding: 0px 10px;
     font-family: "Cardo", serif;
+    color: gray;
 }
 
 .navbar-link:hover{
@@ -47,12 +56,12 @@
 }
 
 .navbar-link.contact{
-    color: #ff0000;
+    color: white;
 }
 
 .body-container{
     display: inline-block;
-    margin-top: 100px;
+    margin-top: 150px;
     padding: 0px 50px;
     min-width: 900px;
 }
@@ -63,7 +72,7 @@
     height: 400px;
     margin: 0px 0px;
     vertical-align: top;
-    
+    margin: 10px;
     background-color: white;
 
     cursor: pointer;
