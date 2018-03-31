@@ -1,9 +1,9 @@
 html{
-    background-color: #dead59;
+    background-color: #292929;
 }
 
 body{
-    background-color: #dead59;
+    background-color: #292929;
     height: 66vw;
 }
 .navbar{
@@ -26,7 +26,7 @@ body{
     /* padding: 0px 10px; */
     text-align: center;
     text-transform: uppercase;
-    color: #dead59;
+    color: white;
     height: 100px;
     width: 300px;
     
@@ -60,10 +60,12 @@ body{
 }
 
 .body-container{
-    display: inline-block;
-    margin-top: 150px;
-    padding: 0px 50px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
     min-width: 900px;
+
 }
 
 .folder-container{
@@ -74,7 +76,6 @@ body{
     vertical-align: top;
     margin: 10px;
     background-color: white;
-
     cursor: pointer;
     transition: 0.5s ease all;
 }

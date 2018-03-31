@@ -54,10 +54,11 @@
     display: flex !important;
 }
 .password-field-container > .input-field{
-    margin: 10px;
+    margin: 0px;
     background-color: #171717;
     border-width: 2px;
     border-color: #3f4042;
+    border-right: none;
     width: 60%;
 
 }

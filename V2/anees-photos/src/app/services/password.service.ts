@@ -9,7 +9,7 @@ export class PasswordService{
     }
 
     verifyPassword(passwordString: string): boolean {
-        if (passwordString === 'password') {
+        if (passwordString === 'mahn53') {
             return true;
         } else {
             return false;

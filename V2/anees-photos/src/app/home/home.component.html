@@ -1,11 +1,11 @@
 <body>
 <div class="navbar">
-  <div class="logo">
+  <div class="logo"> 
     Anees Photography
   </div>
   <div class="navbar-controls-container">
     <a class="navbar-link" *ngFor="let folder of folders" (click)="goToGallery(folder.Prefix)">{{folder.Prefix}}</a>
-    <a class="navbar-link contact">contact</a>
+    <a href= "mailto:contact@aneesphotos.com" class="navbar-link contact">contact</a>
   </div>
 </div>
 <div class="body-container" *ngIf="tnLoaded">
