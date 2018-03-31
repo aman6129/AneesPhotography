@@ -1,3 +1,6 @@
+html, body{
+    background-color: #292929;
+}
 .gallery-header{
     display: block;
     position: fixed;
@@ -17,6 +20,7 @@
     padding: 0px 15px;
     font-family: "Cardo", serif;
     font-size: 20px;
+    color: gray;
 }
 
 .back-btn{
