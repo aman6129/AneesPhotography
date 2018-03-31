@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
   }
 
   private getFolderImages() {
-    for (let folder of this.folders) {
+    for (const folder of this.folders) {
       let folderName = folder.Prefix;
       folderName = folderName.substr(0, folderName.length - 1);
       const imgName = folder.Prefix + folderName + '_tn.JPG';
