@@ -9,7 +9,7 @@ body{
 .navbar{
     display: block;
     position: fixed;
-    background-color: #343a40;
+    background-color: #292929;
     width: 100%;
     height: 100px;
     line-height: 100px;
@@ -44,7 +44,7 @@ body{
     font-size: 18px;
     padding: 0px 10px;
     font-family: "Cardo", serif;
-    color: gray;
+    color: white !important;
 }
 
 .navbar-link:hover{
@@ -56,7 +56,7 @@ body{
 }
 
 .navbar-link.contact{
-    color: white;
+    color: #ff6363 !important;
 }
 
 .body-container{

@@ -23,6 +23,9 @@
     width: 50%;
     height: 100%;
     position: absolute;
+
+    border: none;
+    border-radius: 0px;
     
 }
 .card.left{
@@ -60,6 +63,8 @@
     border-color: #3f4042;
     border-right: none;
     width: 60%;
+    height: 40px;
+    border-color: white;
 
 }
 .password-field-container >.btn.primary {
@@ -67,14 +72,15 @@
     color: black;
     border-radius: 0px;
     transition-duration: 0.4s;
-    border-width: 1px;
-    border-color: #3f4042;
-    height: 35px;
+    border-width: 2px;
+    border-color: white;
+    height: 40px;
+    line-height: 36px;
 }
 
 .password-field-container >.btn.primary:hover{
     background-color: #171717;
-    color: gray;
+    color: white;
 }
 
 .arrow-container{

@@ -14,6 +14,9 @@ export class GalleryComponent implements OnInit {
   private imageKeys: any;
   private baseUrl: string;
 
+  private showModal = false;
+  private selectedImage: any;
+
   constructor(private route: ActivatedRoute,
    private imageService: ImageStoreService) {
      this.baseUrl = environment.storageServiceInfo.s3BaseUrl;
@@ -41,9 +44,8 @@ export class GalleryComponent implements OnInit {
   }
 
   private toggleExpand(img: any) {
-    let imgIndex = this.imageKeys.indexOf(img);
-    const isExpanded = this.imageKeys[imgIndex]['expanded'];
-    this.imageKeys[imgIndex]['expanded'] = isExpanded === false || isExpanded === undefined ? true : false;
+    this.selectedImage = img;
+    this.showModal = true;
 
   }
 
